@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiNegocio SV - Tu tienda en línea en 5 minutos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <svg class="w-8 h-8 text-brand-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>
+                    <span class="font-bold text-xl text-gray-900 tracking-tight">MiNegocio SV</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white overflow-hidden relative">
+        <div class="absolute inset-0 bg-brand-50 opacity-50 transform -skew-y-3 origin-top-left z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        MiNegocio SV:<br>
+                        <span class="text-brand-600">Tu tienda en línea en 5 minutos</span>
+                    </h1>
+                    <p class="mt-4 text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0">
+                        Centraliza tu catálogo, recibe pedidos y cobra en línea sin complicaciones.
+                    </p>
+                    <div>
+                        <a href="#precios" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-white bg-brand-600 hover:bg-brand-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            Comenzar gratis
+                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative w-full h-full flex justify-center mt-10 lg:mt-0">
+                    <!-- Minimalist E-commerce Illustration (SVG) -->
+                    <svg class="w-full max-w-md drop-shadow-2xl" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="50" y="80" width="400" height="260" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="8"/>
+                        <path d="M50 120H450" stroke="#e5e7eb" stroke-width="8"/>
+                        <circle cx="80" cy="100" r="6" fill="#cbd5e1"/>
+                        <circle cx="100" cy="100" r="6" fill="#cbd5e1"/>
+                        <circle cx="120" cy="100" r="6" fill="#cbd5e1"/>
+                        <!-- Store UI Mockup inside screen -->
+                        <rect x="80" y="150" width="100" height="100" rx="8" fill="#dbeafe"/>
+                        <rect x="200" y="150" width="220" height="20" rx="4" fill="#f1f5f9"/>
+                        <rect x="200" y="180" width="180" height="12" rx="4" fill="#f1f5f9"/>
+                        <rect x="200" y="210" width="80" height="30" rx="6" fill="#3b82f6"/>
+                        <!-- Secondary items -->
+                        <rect x="80" y="270" width="60" height="40" rx="6" fill="#f1f5f9"/>
+                        <rect x="150" y="270" width="60" height="40" rx="6" fill="#f1f5f9"/>
+                        <rect x="220" y="270" width="60" height="40" rx="6" fill="#f1f5f9"/>
+                        <!-- Floating element -->
+                        <rect x="340" y="250" width="140" height="80" rx="12" fill="#ffffff" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.1))"/>
+                        <circle cx="370" cy="290" r="16" fill="#10b981"/>
+                        <path d="M364 290l4 4 8-8" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <rect x="395" y="280" width="60" height="8" rx="4" fill="#e2e8f0"/>
+                        <rect x="395" y="296" width="40" height="6" rx="3" fill="#e2e8f0"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Todo lo que necesitas para vender más</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <!-- Benefit 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Simple e intuitivo</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sin conocimientos técnicos: tú solo subes tus productos y nosotros hacemos el resto.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Gestión eficiente</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Recibe pedidos organizados y notificaciones en tiempo real.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Pagos flexibles</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Acepta pagos con tarjeta, transferencia o efectivo desde tu teléfono.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="py-20 bg-gray-50 border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Planes diseñados para tu crecimiento</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Comienza sin costo y mejora tu plan conforme tu negocio expande sus horizontes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+                
+                <!-- Plan Emprendedor -->
+                <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Plan Emprendedor</h3>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-4xl font-extrabold text-gray-900">Gratis</span>
+                    </div>
+                    <ul class="flex-1 space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Catálogo con hasta 20 productos</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 text-center rounded-xl text-brand-600 font-semibold border-2 border-brand-100 hover:bg-brand-50 transition-colors">Empezar gratis</a>
+                </div>
+
+                <!-- Plan Pro (Highlighted) -->
+                <div class="bg-white rounded-3xl p-8 border-2 border-brand-500 shadow-2xl relative transform md:-translate-y-4 flex flex-col h-full z-10">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <span class="bg-brand-600 text-white text-sm font-bold uppercase tracking-wider py-1 px-4 rounded-full">Recomendado</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2 mt-4">Plan Pro</h3>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-4xl font-extrabold text-gray-900">$5</span>
+                        <span class="text-gray-500 ml-1">/mes</span>
+                    </div>
+                    <ul class="flex-1 space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-700 font-medium">Productos ilimitados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-700 font-medium">Pasarela de pago</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-700 font-medium">Reportes</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 text-center rounded-xl text-white font-semibold bg-brand-600 hover:bg-brand-700 shadow-md transition-colors">Elegir Plan Pro</a>
+                </div>
+
+                <!-- Plan Negocio -->
+                <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Plan Negocio</h3>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-4xl font-extrabold text-gray-900">$10</span>
+                        <span class="text-gray-500 ml-1">/mes</span>
+                    </div>
+                    <ul class="flex-1 space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Todo lo del Plan Pro</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Múltiples usuarios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-600">Soporte prioritario</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full py-3 px-4 text-center rounded-xl text-brand-600 font-semibold border-2 border-brand-100 hover:bg-brand-50 transition-colors">Elegir Plan Negocio</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">¿Listo para llevar tu negocio al siguiente nivel?</h2>
+            <p class="text-lg text-gray-600 mb-10">Escoge la opción que mejor se adapte a tus necesidades y comienza a vender hoy mismo.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+                <!-- Botón Fuerte -->
+                <a href="#" class="w-full sm:w-auto px-8 py-3 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-xl shadow-lg transition-colors text-lg order-1 sm:order-3">
+                    Comprar ahora
+                </a>
+                
+                <!-- Botón Medio -->
+                <a href="#" class="w-full sm:w-auto px-8 py-3 border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium rounded-xl transition-colors text-lg order-2">
+                    Agendar demostración
+                </a>
+
+                <!-- Botón Débil -->
+                <a href="#" class="w-full sm:w-auto px-6 py-3 text-brand-600 hover:text-brand-800 font-medium transition-colors text-lg order-3 sm:order-1">
+                    Comenzar gratis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center md:text-left">
+                
+                <!-- Logo & Description -->
+                <div>
+                    <div class="flex items-center justify-center md:justify-start mb-4">
+                        <svg class="w-6 h-6 text-brand-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                        <span class="font-bold text-xl text-white tracking-tight">MiNegocio SV</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Potenciando el comercio digital en El Salvador y el mundo de manera fácil, rápida y segura.
+                    </p>
+                </div>
+
+                <!-- Contact & Legal Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Enlaces útiles</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors text-sm">Información de Contacto</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors text-sm">Aviso Legal</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors text-sm">Términos y Condiciones</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors text-sm">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 uppercase text-sm tracking-wider">Síguenos</h4>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+                &copy; 2026 MiNegocio SV. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
